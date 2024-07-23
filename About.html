@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SR IT Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="About.css">
+     <link rel="shortcut icon" href="Images/Shortcut-Icon-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="Images/Shortcut-Icon-removebg-preview.png" alt="SR IT Solutions Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="ContactUs.html"></a></li>Feedback
+                </ul>
+                <div class="burger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About SR IT Solutions</h2>
+            <p>SR IT Solutions is a leading provider of innovative IT solutions. We specialize in delivering high-quality software development, IT consulting, and digital transformation services to businesses of all sizes.</p>
+            <p>Our team of experts is dedicated to helping our clients achieve their business goals by leveraging the latest technologies and best practices in the industry.</p>
+            <p>At SR IT Solutions, we strive for excellence in everything we do. Our commitment to quality, integrity, and customer satisfaction sets us apart from the competition.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SR IT Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('nav-active');
+        }
+    </script>
+</body>
+</html>

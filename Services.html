@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SR IT Solutions</title>
+    <link rel="stylesheet" href="services.css">
+     <link rel="shortcut icon" href="Images/Shortcut-Icon-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="Home.html"> 
+                   <img src="Images/Shortcut-Icon-removebg-preview.png" alt="SR IT Solutions Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html" class="active">Services</a></li>
+                    <li><a href="ContactUs.html">Feedback</a></li>
+                </ul>
+                <div class="burger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="service-item">
+                <h2>Custom Software Development</h2>
+                <p>We design and develop custom software solutions tailored to meet your specific business needs. Our team of experienced developers utilizes the latest technologies to create robust and scalable software applications.</p>
+                <a href="#booking" class="btn">Book a Consultation</a>
+            </div>
+            <div class="service-item">
+                <h2>IT Consulting</h2>
+                <p>Our experienced consultants provide strategic guidance and support to help optimize your IT infrastructure. We offer comprehensive assessments, technology roadmaps, and implementation strategies to drive efficiency and innovation.</p>
+                <a href="#booking" class="btn">Book a Consultation</a>
+            </div>
+            <div class="service-item">
+                <h2>Digital Transformation</h2>
+                <p>We assist businesses in embracing digital transformation to stay competitive in today's fast-paced market. Our services include digital strategy development, process automation, and the integration of emerging technologies.</p>
+                <a href="#booking" class="btn">Book a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book a Consultation</h2>
+            <p>Schedule a consultation with our experts to discuss how we can assist with your IT needs. Fill out the form below to get started.</p>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST" netlify>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="service" required>
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="Custom Software Development">Custom Software Development</option>
+                    <option value="IT Consulting">IT Consulting</option>
+                    <option value="Digital Transformation">Digital Transformation</option>
+                </select>
+                <input type="date" name="date" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SR IT Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('nav-active');
+        }
+    </script>
+</body>
+</html>
